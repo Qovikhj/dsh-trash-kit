@@ -56,6 +56,21 @@ AI 代理帮你干活时，"删除文件"是最危险的一类操作。真实会
 - **DSH 已安装并启动过至少一次**（否则 `~\.dsh\profiles\` 还不存在，插件无处可装）；
 - 在**普通**窗口跑（不要放在 DSH 沙箱里跑：写 `~\.dsh`、查/改计划任务都可能被拒）。
 
+### 依赖与第三方组件
+
+**本项目没有任何第三方依赖**：不需要装 PowerShell 模块（无 `Pester`/`PSReadLine` 之外的任何模块），不需要 `npm install`，插件本身零依赖。
+
+| 需要什么 | 用途 | 是否必需 |
+|---|---|---|
+| Windows 10/11 | 脚本用了 `Move-Item`、`schtasks`、注册表 | **必需** |
+| Windows PowerShell 5.1 | 所有 `.ps1` 的运行环境（已随 Windows 自带） | **必需** |
+| DSH（提供 `ctx.tools.guard()`） | 只有"**拦**"这一层需要插件 | 拦截面必需；`trash.ps1` / `doctor.ps1` / `offline-restore.ps1` 可脱离 DSH 单独使用 |
+| Node.js | 只有 `staging\check-yaml.cjs`（开发期 QA 工具）需要 | **可选**，不跑它不影响任何功能 |
+| `yaml` npm 包 | 同上，`check-yaml.cjs` 用它解析 `cordis.patch.yml` | **可选**；脚本运行时会自动找 DSH profile 里自带的那份，找不到才回退 `require('yaml')` |
+| 其它第三方库 / 服务 | — | **无** |
+
+> 除上表外，`trash.ps1`、`doctor.ps1`、`offline-restore.ps1`、`setup.ps1` 只调用 Windows 自带程序（`cmd`、`powershell`、`schtasks`）与 PowerShell 内置 cmdlet，没有 `#Requires`、没有 `Import-Module`。
+
 ### 双击安装（最省事）
 
 把整个 `dsh-trash-kit` 文件夹拷到目标机器 → **双击 `setup.cmd`** → 选 `1`：
