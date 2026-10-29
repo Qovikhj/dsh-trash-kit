@@ -1,0 +1,103 @@
+{
+    "kit":  "dsh-trash-kit",
+    "generatedAt":  "2026-10-29 17:24:57 +08:00",
+    "host":  {
+                 "version":  "0.2.1-rc.3",
+                 "channel":  "nightly",
+                 "asarBytes":  182434783,
+                 "asarMtime":  "2026-10-23 16:00:56"
+             },
+    "note":  "setup.ps1 按本清单铺开 files\\ 下的内容；随时可用 setup.ps1 -Export 重新生成，使套装等于当前已验证状态。",
+    "files":  [
+                  {
+                      "path":  "trash.ps1",
+                      "bytes":  48166,
+                      "sha256":  "987717FBDC01824F07D7C0CD7E8BE7378A41EF1F3D39A60CC879C031E9AFA1B6"
+                  },
+                  {
+                      "path":  "trash.cmd",
+                      "bytes":  286,
+                      "sha256":  "8285A2D634B2640C2057E60E4C8151FC2B62EA54607D419F11B9A90314F4E5B8"
+                  },
+                  {
+                      "path":  "doctor.ps1",
+                      "bytes":  18574,
+                      "sha256":  "6A3533D8F6493F4080EAE7BB001C6ED1F711A75A44D61877C87CD590C5533746"
+                  },
+                  {
+                      "path":  "doctor.cmd",
+                      "bytes":  316,
+                      "sha256":  "67F2B6BF2CB410CE2363E8A9768F43DAB2905ECA8D9EFB6B40B46EA9E2FB821D"
+                  },
+                  {
+                      "path":  "offline-restore.ps1",
+                      "bytes":  22108,
+                      "sha256":  "68B70318F45FB44291EBDF2A3B308B7B161BDF3A9E7710DB31AC6D5E86B5CB00"
+                  },
+                  {
+                      "path":  "offline-restore.cmd",
+                      "bytes":  4991,
+                      "sha256":  "A5280712EE347FB24FBE03A0BA1464F6C09ED060B6D976E541C1885A0CD16B06"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\package.json",
+                      "bytes":  401,
+                      "sha256":  "31118BA7DFDCCC8BE8E3FC3AB92A3D921492A861EED93AC77D48A2B853037767"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\lib\\index.js",
+                      "bytes":  11499,
+                      "sha256":  "7BEABB8E5F267B26A130B8B19B4673222C0E6F61905ED611104DD2752AC9332A"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\README.md",
+                      "bytes":  4516,
+                      "sha256":  "618FB75D758D82C3597A56E5069152EC8243CE918C09BD976A523AC69FB51CE3"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\install.ps1",
+                      "bytes":  2546,
+                      "sha256":  "9A94E438EDCBBBEE790E54FED9573132B5FCEA3327CF21459D02347E33460F33"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\install-snippet.yml",
+                      "bytes":  334,
+                      "sha256":  "36D6A6EEB20259FCDBD5A2264B952E155C5A5A6A1C7EFAD936941CF8BFD1FCD3"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\staging\\global-AGENTS.md",
+                      "bytes":  5282,
+                      "sha256":  "871AA8ED00D48489831BC4E02E1E3129859B9E94F31DEAA398EF9EF168E9D06C"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\staging\\web-cordis.patch.yml",
+                      "bytes":  819,
+                      "sha256":  "DAF502FB7030A0C466726D5B2D78E2D1AF6BFB972603D378B048EC52B95A5433"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\staging\\check-yaml.cjs",
+                      "bytes":  1654,
+                      "sha256":  "E8542C64EE1416EDBDF28E67A4720BE9149E26D229084BD14500C585580E3F48"
+                  },
+                  {
+                      "path":  "dsh-trash-guard\\staging\\README.md",
+                      "bytes":  1452,
+                      "sha256":  "B1779F6A055B43DF641FF020978449936EB714A94A7C5BCBD479B6E8C10E3C18"
+                  },
+                  {
+                      "path":  "templates\\AGENTS.workspace.md",
+                      "bytes":  4717,
+                      "sha256":  "4D2E2BC4C4FD89BDFFE46A056DA74A8FD507ECD663498834BB743272CC454C11"
+                  },
+                  {
+                      "path":  "templates\\apply-workspace-rules.ps1",
+                      "bytes":  1537,
+                      "sha256":  "82999859231AC04342092B2331DC6781D9AE06DFA4AD0976B9371AD20F537742"
+                  },
+                  {
+                      "path":  "templates\\README.md",
+                      "bytes":  1117,
+                      "sha256":  "F5CD2230E2345A639F9412690EDEBCB52DE401F4A4BBBB4667FECA1F9187546E"
+                  }
+              ]
+}

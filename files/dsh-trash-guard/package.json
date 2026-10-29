@@ -1,0 +1,16 @@
+{
+  "name": "dsh-trash-guard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DSH 删除拦截插件：单调拒绝 del/rm/Remove-Item 等直接删除命令，删除只能走 trash.ps1 搬进「待删除」。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ]
+}

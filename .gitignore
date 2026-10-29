@@ -1,0 +1,21 @@
+# ---- 运行时 / 临时产物 ----
+*.log
+*.tmp
+*.bak
+*.swp
+~$*
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- 本工具的运行时状态（万一被放进套装）----
+offline-restore-last.txt
+trash-pending.json
+trash-alerts.log
+doctor.log
+
+# ---- 本地备份与历史（不随仓库走）----
+history/
+backup/
+
+# 注意：kit-manifest.json 是套装的一部分，必须提交，不要加进忽略。

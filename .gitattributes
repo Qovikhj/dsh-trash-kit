@@ -1,0 +1,5 @@
+# 本仓库混着三种编码/换行：GBK+CRLF(.cmd)、UTF-8+LF(.md/.json)、UTF-8+BOM(.ps1)。
+# 任何换行或编码转换都可能弄坏文件 → 一律按字节原样保存。
+* -text
+# .cmd 是 GBK(936) 中文批处理，连 diff 都别当文本显示
+*.cmd binary

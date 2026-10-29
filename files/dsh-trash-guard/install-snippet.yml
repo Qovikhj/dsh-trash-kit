@@ -1,0 +1,6 @@
+# 删除拦截：单调拒绝 del / rm / Remove-Item 等直接删除命令，
+# 删除只能走 %USERPROFILE%\.dsh\tools\trash.ps1 搬进「待删除」（见 ~/.dsh/AGENTS.md）。
+# 关掉它只能由用户操作：把下面这行改成 disabled: true，或整段删掉。
+- insert:
+    - id: trash-guard
+      name: dsh-trash-guard

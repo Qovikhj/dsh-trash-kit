@@ -1,0 +1,15 @@
+# dsh-hooks 原本在这里配了一份 PreToolUse / permissionDecision / failClosed 的钩子，
+# 那套字段不属于本插件的 schema（dsh-hooks 是 emit-only 的事件通知插件，不支持拦停工具调用），
+# 所以它从来没有生效过，现清理为合法的空 hook 列表。
+# 它真正的写法是 hooks: [{ on: tool/call, run: '<命令>' }]（见插件 README.zh.md），需要时再写回。
+- id: dsh-hooks
+  config:
+    enabled: true
+    hooks: []
+
+# 删除拦截：单调拒绝 del / rm / Remove-Item 等直接删除命令，
+# 删除只能走 %USERPROFILE%\.dsh\tools\trash.ps1 搬进「待删除」（见全局 ~/.dsh/AGENTS.md）。
+# 关掉它只能由用户操作：把下面这行改成 disabled: true，或整段删掉。
+- insert:
+    - id: trash-guard
+      name: dsh-trash-guard
